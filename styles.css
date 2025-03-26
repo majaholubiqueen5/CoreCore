@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     overflow: hidden;
@@ -25,9 +26,10 @@ body {
 }
 
 .map-container {
-    width: 300%;
-    height: 300%;
+    width: 200vw;
+    height: 200vh;
     position: relative;
+    overflow: hidden;
 }
 
 .item {
@@ -38,10 +40,12 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: grab;
     max-width: 15vw;  /* velikosti fotekk */
-    max-height: 15vw; 
+    max-height: 15vh; 
     object-fit: contain; /* pomery fotek */
+    display: block;
 }
 
+}
 .item:active {
     cursor: grabbing;
 }
