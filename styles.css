@@ -3,6 +3,8 @@ body {
     margin: 0;
     overflow: hidden;
     background-color: lightpink;
+    width: 100%;
+    height: 100%;
 }
 
 .banner {
@@ -39,8 +41,8 @@ body {
     border-radius: 5px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: grab;
-    max-width: 15vw;  /* velikosti fotekk */
-    max-height: 15vh; 
+    max-width: 25vw;  /* velikosti fotekk */
+    max-height: 25vh; 
     object-fit: contain; /* pomery fotek */
     display: block;
 }
