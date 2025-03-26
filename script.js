@@ -4,7 +4,7 @@ const infoBox = document.querySelector('.info-box');
 items.forEach(item => {
     item.addEventListener('mouseover', () => {
         const rect = item.getBoundingClientRect();
-        infoBox.innerHTML = `<strong>${item.alt}</strong><br>Autor: ${item.alt.split(' - ')[1] || 'Neznámý autor'}`;
+        infoBox.innerHTML = `<strong>${item.alt}</strong><br>Autor: ${item.alt.split(' - ')[1] || 'J&M'}`;
         infoBox.style.left = `${rect.left + rect.width + 10}px`;
         infoBox.style.top = `${rect.top}px`;
         infoBox.style.display = 'block';
@@ -26,7 +26,7 @@ items.forEach(item => {
 
     document.addEventListener('mousemove', (e) => {
         if (!isDragging) return;
-        item.style.left = `${e.clientX - offsetX}%`;
+        item.style.left = `${e.clientX - offsetX}px`;
         item.style.top = `${e.clientY - offsetY}px`;
     });
 
