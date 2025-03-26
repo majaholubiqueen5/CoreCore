@@ -26,7 +26,7 @@ items.forEach(item => {
 
     document.addEventListener('mousemove', (e) => {
         if (!isDragging) return;
-        item.style.left = `${e.clientX - offsetX}px`;
+        item.style.left = `${e.clientX - offsetX}%`;
         item.style.top = `${e.clientY - offsetY}px`;
     });
 
